@@ -4,7 +4,7 @@ const app = express()
 let {MongoClient, ClientSession} = require("mongodb")
 let url = "mongodb+srv://kiran:esI50iDpvboyEyZh@cluster0.yo2mf.mongodb.net/test?authSource=admin&replicaSet=atlas-21lddk-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
 app.use(express.json())
-
+const port = process.env.PORT || 4000
 
 
 // api to create mentor details
